@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Pastikan font ini terbaca */
+    background: radial-gradient(circle, #1a1a2e 0%, #16213e 100%);
+    color: #e9ecef;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px); /* Efek blur kaca */
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4cc9f0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background: #4cc9f0;
+    color: #1a1a2e;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 2px solid #4cc9f0;
+    display: inline-block;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #4cc9f0;
+}
+
+.hero-card h3 {
+    color: #4cc9f0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.hero-image {
+    width: 180px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(76, 201, 240, 0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.hero-card:hover .hero-image {
+    transform: scale(1.05);
+    border-color: #4cc9f0;
+    box-shadow: 0 0 20px rgba(76, 201, 240, 0.8);
+}
